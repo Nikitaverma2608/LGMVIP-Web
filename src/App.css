@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+body{
+    background-color: #333333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar {
+    height: 20vh;
+    width: 100%;
+    background-color: #fd7114ce;
+    color: #000;
+    margin-bottom: 20px;
+  
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .navitems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
   }
-  to {
-    transform: rotate(360deg);
+  
+  .navitems p {
+    font-size: 30px;
+    padding: 40px;
+    font-family: serif;
   }
-}
+  
+  .navitems button {
+    background-color: #ffd0b1ce;  
+    color: #000;
+    width: 30%;
+    height: 15vh;
+    border: none;
+    border-radius: 15px;
+    font-family: serif;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;  
+  }
+
+  .fetchbtn:hover {
+    background-color: #fff;
+  }
+
+  .userdatacontainer {
+    width: 100%;
+    height: fit-content;
+    background-color: #333333;
+  }
+
+  #main {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .name:hover {
+    color: red;
+  }
+  
+  .avatar {
+    border-radius: 50%;
+  }
+  
+  .profile_cont {
+    border-radius: 50%;
+    background-image: linear-gradient(#fd7114ce, #ffd0f7);
+    margin: 5px;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+    transition: transform ease 0.2s;
+    opacity: 0.8;
+    margin-top: 8vh;
+  }
+  
+  .profile_cont:hover {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    font-size: 4rem;
+    color: #000;
+  }
